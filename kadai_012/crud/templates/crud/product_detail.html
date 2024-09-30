@@ -18,7 +18,7 @@
         <td>{{ object.price }} 円</td>
         <td>{{ object.category }}</td>
         <td>{{ object.img }}</td>
-        <td>{{ object.explanation }}</td>
+        <td>{{ object.explanation | linebreaksbr }}</td>
     </tr>
 </table>
 <a href="{% url 'list' %}">戻る</a>
